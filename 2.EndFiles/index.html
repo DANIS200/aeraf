@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive navbar</title>
+    <link rel="stylesheet" href="dist/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="footeur2.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="top">
+    <header class=" bg-white z-50 fixed top-0 w-full shadow">
+      <nav
+        id="main-nav"
+        class="bg-white max-w-5xl mx-auto font-poppins p-6 flex items-center justify-between"
+      >
+        <a href="../biblio/AERAF2.html" class="flex" aria-label="Page d'accueil du portfolio">
+          <img
+            src="images/logoaeraf.png"
+            class="hidden md:w-7 md:inline md:mr-4"
+            alt=""
+          />
+          <span 
+          aria-hidden="true"
+          class="text-lg lg:text-xl"
+          >
+            aeraf <strong>membre<span class="text-rose-600">.</span></strong>
+          </span>
+        </a>
+        <button
+        aria-label="toggle button"
+        aria-expanded="false"
+        id="menu-btn"
+        class="cursor-pointer w-7 md:hidden"
+        >
+          <img src="images/menu.svg" alt="">
+        </button>
+      <ul 
+      id="toggled-menu" style="background: #fff;"
+      class="w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row"
+      >
+        <li class="py-4 md:py-0 md:mr-6">
+          <a 
+          href="../2.EndFiles/branche/forum.html"
+          class="text-sm uppercase font-semibold w-full hover:text-rose-600">forum
+          </a>
+        </li>
+        <li class="py-4 md:py-0 md:mr-6">
+          <a 
+          href="../2.EndFiles/branche/cours.html"
+          class="text-sm uppercase font-semibold w-full hover:text-rose-600">Cours
+          </a>
+        </li>
+        <li class="py-4 md:py-0 md:mr-6">
+          <a 
+          href="../2.EndFiles/branche/etudes.html"
+          class="text-sm uppercase font-semibold w-full hover:text-rose-600"> Études
+          </a>
+        </li>
+        <li class="py-4 md:py-0 md:mr-6">
+          <a 
+          href="../2.EndFiles/branche/plus.html"
+          class="text-sm uppercase font-semibold w-full hover:text-rose-600">plus
+          </a>
+        </li>
+      </ul>
+      </nav>
+    </header>
+
+
+
+    <div class="dashboard-container">
+      <!-- Sidenav -->
+      <h1 class="mobile-title"><span>Your</span> Dashboard</h1>
+      <nav class="sidenav">
+        <div class="logo-container">
+          <img src="ressources/logoaeraf.png" alt="" />
+          <h1>
+            <span>AERAF</span>
+            <em>AERAF</em>
+          </h1>
+        </div>
+        <a href="#">
+          <img src="ressources/dashboard.svg" alt="" />
+          <span>Dashboard</span>
+        </a>
+        <a href="longement.html">
+          <img src="ressources/bank.svg" alt="" />
+          <span>longement</span>
+        </a>
+        <a href="#">
+          <img src="ressources/home.svg" alt="" /> <span>Account</span>
+        </a>
+        <a href="service.html">
+          <img src="ressources/globe-solid.svg" alt="" /> <span>Services</span>
+        </a>
+        <button class="floating-btn">
+          <img src="ressources/doublearrow.png" alt="">
+        </button>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="monthly-bloc total-savings">
+          <p>
+            <span> <a href="../2.EndFiles/branche/forum.html">forums étudiant</a></span>
+
+            <span class="percentage-infos month-green-infos"> <a href="../2.EndFiles/branche/forum.html"><img src="ressources/logo forum.png" alt=""></a></span>
+          </p>
+          <span class="monthly-price-section"> <a href="../2.EndFiles/branche/forum.html"><img src="ressources/forumdevelop.png" alt=""></a></span>
+           <a href="../2.EndFiles/branche/forum.html"><img src="ressources/forum.png" alt="growth" /></a>
+        </div>
+        <div class="monthly-bloc monthly-expense">
+          <p>
+            <span> <a href="../biblio2/index.php">Librairie</a></span>
+            <span class="percentage-infos month-green-infos">📕📕</span>
+          </p>
+          <span class="monthly-price-section"> <a href="../biblio2/index.php"><img src="ressources/livre.png" alt=""></a></span>
+           <a href="../biblio2/index.php"><img src="ressources/librerie.png" alt="growth" /></a>
+        </div>
+        <div class="monthly-bloc monthly-recurring">
+          <p>
+            <span><a href="../biblio/AERAF2.html">AERAF</a></span>
+            <span class="percentage-infos month-red-infos"> <a href="../biblio/AERAF2.html"><img src="ressources/@etudient.png" alt=""></a></span>
+          </p>
+          <span class="monthly-price-section"><a href="">étudiants</a></span>
+         <a href="../biblio/AERAF2.html"><img src="ressources/aer.png" alt="loss" /></a>
+        </div>
+
+        <div class="chart-container">
+          <button class="three-dots-container">
+            <div class="more-dot"></div>
+            <div class="more-dot"></div>
+            <div class="more-dot"></div>
+          </button>
+          <h2>
+           <a href="../2.EndFiles/branche/cours.html"> Cours</a>
+            <span class="percentage-infos month-green-infos">signe</span>
+          </h2>
+          <div class="chart-box">
+            <!-- <canvas id="myChart"></canvas> -->
+            <div class="btn">
+              <div class="groupe-btn1">
+                <a class="btn3" href="./open/Open-Classrooms/index.html">informatique</a>
+                <a class="btn3" href="">DEGSS</a>
+                <a class="btn3" href="">science</a>
+              </div>
+              <div class="groupe-btn2">
+                <a class="btn3" href=""> MARKETING</a>
+                <a class="btn3" href="">Langue</a>
+                <a class="btn3" href="">Dev</a>
+              </div>
+           </div>
+          </div>
+        </div>
+
+        <div class="piecharts-section">
+          <button class="three-dots-container">
+            <div class="more-dot"></div>
+            <div class="more-dot"></div>
+            <div class="more-dot"></div>
+          </button>
+          <h2> <a href="../2.EndFiles/branche/plus.html"> plus</a></h2>
+          <div class="pie-box">
+            <!-- <canvas id="pieChart"></canvas> -->
+            <div class="container-plus">
+            <a href=""> Entreprise</a>
+            <a href=""> investisseur</a>
+            <a href=""> Emploi</a>
+            <a href="">challenge</a>
+          </div>
+          </div>
+         <!-- <div class="pie-infos-container">
+            <div class="pie-infos">
+              <div class="rectangle red-rectangle"></div>
+              <span>Emploi</span>
+            </div>
+            <div class="pie-infos">
+              <div class="rectangle green-rectangle"></div>
+              <span>challenge</span>
+            </div>
+          </div> -->
+        </div>
+
+          <div class="advisor-section">
+            <img src="ressources/cree-cours.png" alt="">
+            <p> Vous êtes professeur,
+              expert ou passionné ?
+              
+              Créer des cours ?</p>
+            <button>
+               <h2> Contacte-nous </h2>
+          <p><img src="ressources/email.svg" alt="" /> Envoye message</p>
+        </button>
+            <!-- <h2>contacts rapide</h2>
+          <p><img src="ressources/phone-call.svg" alt="" /> +261348203564</p>
+          <p><img src="ressources/email.svg" alt="" /> antoinedaniskalolahy@gmail.com</p>
+          <img class="profile-adivsor" src="" alt="" width="40px" /> -->
+        </div> 
+
+         <div class="card-section">
+          <h2>À l'honneur cette semaine</h2>
+          <ul class="gallery">
+            <li class="profile-card">
+              <img src="ressources/danis.jpg" alt="profile" class="profile-img">s
+              <ul class="side-social">
+                <a href="#">
+                  <img src="ressources/icons/github.svg" alt="github icon">
+                </a>
+                <a href="#">
+                  <img src="ressources/icons/dribble.svg" alt="dribble icon">
+                </a>
+                <a href="#">
+                  <img src="ressources/icons/linkedin.svg" alt="linkedin icon">
+                </a>
+              </ul>
+              <div class="profile-info">
+                <p class="profile-name">Antoine Danis</p>
+                <p class="profile-work">Front-end  et back-end Developer</p>
+              </div>
+            </li>
+            <li class="profile-card">
+              <img src="ressources/danis.jpg" alt="profile" class="profile-img">
+              <ul class="side-social">
+                <a href="#">
+                  <img src="ressources/icons/github.svg" alt="github icon">
+                </a>
+                <a href="#">
+                  <img src="ressources/icons/dribble.svg" alt="dribble icon">
+                </a>
+                <a href="#">
+                  <img src="ressources/icons/linkedin.svg" alt="linkedin icon">
+                </a>
+              </ul>
+              <div class="profile-info"> 
+                <p class="profile-name">Stephanson</p>
+                <p class="profile-work">Front-end et back-end Developer</p>
+              </div>
+            </li>
+          </ul>
+
+        </div> 
+      
+
+        <div class="side-livefeed">
+        <a href="">
+          <h2>Études : </h2>
+          <img src="ressources/Image1.png" alt="">
+        </a>
+          <div class="live-card">
+            <div class="infos-live">
+              <p></p>
+              <span> <a href="">  science </a></span>
+            </div>
+            <img src="ressources/logofacsience.png" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p></p>
+              <span>  <a href=""> DEGSS </a></span>
+            </div>
+            <img src="ressources/degss.png" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p></p>
+              <span><a href=""> medicine</a></span>
+            </div>
+            <img src="ressources/medi.png" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p></p>
+              <span><a href=""> LETTRE</a></span>
+            </div>
+            <img src="ressources/decrease.svg" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p></p>
+              <span> <a href="">ENI</a></span>
+            </div>
+            <img src="ressources/eni.png" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p></p>
+              <span><a href="">ENS</a></span>
+            </div>
+            <img src="ressources/logoens.png" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p></p>
+              <span><a href="">EMIT</a></span>
+            </div>
+            <img src="ressources/emit.png" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p></p>
+              <span> <a href="">ISTE</a></span> 
+            </div>
+            <img src="ressources/decrease.svg" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p></p>
+              <span><a href="">IFT</a></span>
+            </div>
+            <img src="ressources/increase.svg" alt="" />
+          </div>
+          <div class="live-card">
+            <div class="infos-live">
+              <p></p>
+              <span> <a href="">autre</a></span>
+            </div>
+            <img src="ressources/decrease.svg" alt="" />
+          </div>
+
+          <a href="#">......</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <footer>
+      <div class="black-footer">
+      <div class="pages-de-contenu-footer">
+          <div class="footer2">
+            <div class="funky-container">
+              <p class="funky-base">AERAF</p>
+              <p class="funky-letter fl-1">AERAF</p>
+              <p class="funky-letter fl-2">AERAF</p>
+              <p class="funky-letter fl-3">AERAF</p>
+              <p class="funky-letter fl-4">AERAF</p>
+              <p class="funky-letter fl-5">AERAF</p>
+              <p class="funky-letter fl-6">AERAF</p>
+              <p class="funky-letter fl-7">AERAF</p>
+          </div>
+         </div>
+      </div>
+      <div class="contenu">
+        <div class="contenu1">
+        <div class="footer-list  list1">
+          <p class="footer-title">Categories</p>
+          <ul>
+            <li>Accessories</li>
+            <li>Bags</li>
+            <li>New Arrivals</li>
+            <li>Popular Products</li>
+          </ul>
+        </div>
+        <div class="footer-list  list2">
+          <p class="footer-title">Quick Links</p>
+          <ul>
+            <li>Services</li>
+            <li>Contact Us</li>
+            <li>FAQs</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+      </div>
+        <div class="contenu2">
+         <div class=" pages-contenu">
+             <h3 class="footer-title">PAGES</h3>
+              <a href="">À propos</a>
+             <br>
+             <br>
+              <a href="aeraf.html">aeraf</a>
+         </div>
+         <div class="resaux-sociaux">
+            <h3 class="footer-title">RETROUVEZ NOUS</h3>
+              <div class="sociaux">
+                  <a href=""><img class="icon_facebook" src="../ressources/facebook.svg" alt="" width="55px"></a>
+                  <a href=""><img class="icon_instagram"  src="../ressources/linkedin.svg" alt="" width="55px"></a>
+                  <a href=""> <img class="icon_twitter" src="../ressources/twitter.svg" alt="" width="55px"></a>
+                 </div>
+         </div>
+        </div>
+      </div>
+      <div class="fin-de-page"> 
+          <ul>
+            <span>2023 Tous droits réservés</span>
+            <li>Politique de confidentialité</li>
+             <li>Conditions d’utilisation </li>
+          </ul>
+      </div>
+  </div>
+</div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="script.js"></script>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
